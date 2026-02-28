@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms - Buttons & Groups Example</title>
+</head>
+<body>
+    <h1>Form Buttons & Button Groups Example</h1>
+    <form>
+        <fieldset>
+            <legend>Login Form</legend>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br><br>
+
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd"><br><br>
+
+            <div>
+                <button type="submit">Login</button>
+                <button type="reset">Reset</button>
+                <button type="button" onclick="alert('Help Info')">Help</button>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Button Group Example</legend>
+            <label>Choose an action:</label><br>
+            <div>
+                <input type="button" value="Save">
+                <input type="button" value="Edit">
+                <input type="button" value="Delete">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

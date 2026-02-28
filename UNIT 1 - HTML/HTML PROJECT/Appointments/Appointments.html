@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments - LaikaCare</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <div>
+                <img src="/Home/Laika Icon.png" alt="Laika Care Logo">
+                <span>Laika Care</span>
+            </div>
+            <nav>
+                <a href="/Home/Laika.html"><button> Home </button></a>
+                <a href="/About/About.html"><button> About </button></a>
+                <a href="/Services/Services.html"><button> Services </button></a>
+                <a href="/Appointments/Appointments.html"><button> Appointments </button></a>
+                <a href="/Premium/Premium.html"><button> Premium</button></a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h1>Appointment &hyphen; LaikaCare</h1>
+            <h2><i>Fast, Simple & Reliable Pet Appointments</i></h2>
+            <div>
+                <div>
+                    <span>⭐</span>
+                    <span><strong>Premium Members:</strong> Get priority slots and instant confirmation</span>
+                    <a href="#premium-benefits">View Benefits ↓</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <div>
+                    <div>📅</div>
+                    <h3>Basic Appointment</h3>
+                    <p>Standard booking with regular slots</p>
+                    <div>STANDARD</div>
+                </div>
+                <div>
+                    <div>👑</div>
+                    <h3>Premium Appointment</h3>
+                    <p>Priority booking with exclusive benefits</p>
+                    <div>PREMIUM</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h2>Book Your Appointment</h2>
+                <div>
+                    <span>Basic Appointment</span>
+                    <div>
+                        <span>Upgrade to Premium for better slots</span>
+                        <a href="/Premium/Premium.html">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <form id="appointmentForm">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" required placeholder="Enter your full name">
+                    </div>
+
+                    <div>
+                        <label for="pet-type">Select your pet:</label>
+                        <select id="pet-type" required>
+                            <option value="">Select Pet Type</option>
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                            <option value="rabbit">Rabbit</option>
+                            <option value="guinea-pig">Guinea Pigs</option>
+                            <option value="hamster">Hamster</option>
+                            <option value="parrot">Parrots</option>
+                            <option value="lovebird">Love Birds</option>
+                            <option value="fish" disabled>Fish (Premium Only)</option>
+                        </select>
+                        <div>
+                            <span>ℹ️</span>
+                            <span>Fish care requires Premium membership</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="pet-breed">Select your Pet's Breed/Types:</label>
+                        <select id="pet-breed" required>
+                            <option value="">Select Breed/Type</option>
+                            <option value="" disabled>--- Dogs ---</option>
+                            <option value="labrador">Labrador Retriever</option>
+                            <option value="german-shepherd">German Shepherd</option>
+                            <option value="golden-retriever">Golden Retriever</option>
+                            <option value="beagle">Beagle</option>
+                            <option value="pug">Pug</option>
+                            <option value="rottweiler">Rottweiler</option>
+                            <option value="doberman">Doberman</option>
+                            <option value="shih-tzu">Shih Tzu</option>
+                            <option value="" disabled>--- Cats ---</option>
+                            <option value="persian">Persian</option>
+                            <option value="siamese">Siamese</option>
+                            <option value="maine-coon">Maine Coon</option>
+                            <option value="bengal">Bengal</option>
+                            <option value="british-shorthair">British Shorthair</option>
+                            <option value="ragdoll">Ragdoll</option>
+                            <option value="" disabled>--- Rabbits ---</option>
+                            <option value="holland-lop">Holland Lop</option>
+                            <option value="netherland-dwarf">Netherland Dwarf</option>
+                            <option value="lionhead">Lionhead</option>
+                            <option value="rex-rabbit">Rex Rabbit</option>
+                            <option value="newzealand-white">NewZealand White</option>
+                            <option value="flemish-giant">Flemish Giant</option>
+                            <option value="" disabled>--- Guinea Pigs ---</option>
+                            <option value="american">American</option>
+                            <option value="abyssinian">Abyssinian</option>
+                            <option value="peruvian">Peruvian</option>
+                            <option value="teddy">Teddy</option>
+                            <option value="silkie">Silkie</option>
+                            <option value="" disabled>--- Hamsters ---</option>
+                            <option value="syrian">Syrian</option>
+                            <option value="roborovski">Roborovski</option>
+                            <option value="chinese">Chinese</option>
+                            <option value="" disabled>--- Parrots ---</option>
+                            <option value="african-grey">African Grey</option>
+                            <option value="indian-ringneck">Indian Ringneck</option>
+                            <option value="macaw">Macaw</option>
+                            <option value="cockatoo">Cockatoo</option>
+                            <option value="amazon-parrot">Amazon Parrot</option>
+                            <option value="conure">Conure</option>
+                            <option value="" disabled>--- Love Birds ---</option>
+                            <option value="peach-faced">Peach Faced Lovebirds</option>
+                            <option value="fischer">Fischer's Lovebirds</option>
+                            <option value="masked">Masked Lovebirds</option>
+                            <option value="" disabled>--- Fish (Premium Only) ---</option>
+                            <option value="goldfish" disabled>Goldfish</option>
+                            <option value="betta" disabled>Betta</option>
+                            <option value="guppy" disabled>Guppy</option>
+                            <option value="molly" disabled>Molly</option>
+                            <option value="tetra" disabled>Tetra</option>
+                            <option value="koi" disabled>Koi</option>
+                            <option value="angelfish" disabled>Angelfish</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" min="0" max="30" required placeholder="Pet's age in years">
+                    </div>
+
+                    <div>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" pattern="[0-9]{10}" required placeholder="10-digit mobile number">
+                    </div>
+
+                    <div>
+                        <div>
+                            <label for="date">Preferred Date:</label>
+                            <input type="date" id="date" required>
+                        </div>
+                        <div>
+                            <label for="time">Preferred Time:</label>
+                            <select id="time" required>
+                                <option value="">Select Time Slot</option>
+                                <option value="9-11">9:00 AM - 11:00 AM</option>
+                                <option value="11-1">11:00 AM - 1:00 PM</option>
+                                <option value="2-4">2:00 PM - 4:00 PM</option>
+                                <option value="4-6">4:00 PM - 6:00 PM</option>
+                                <option value="premium-1" disabled>8:00 AM - 9:00 AM (Premium)</option>
+                                <option value="premium-2" disabled>1:00 PM - 2:00 PM (Premium)</option>
+                                <option value="premium-3" disabled>6:00 PM - 7:00 PM (Premium)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="service">Service Required:</label>
+                        <select id="service" required>
+                            <option value="">Select Service</option>
+                            <option value="consultation">Veterinary Consultation</option>
+                            <option value="vaccination">Vaccination</option>
+                            <option value="grooming">Pet Grooming</option>
+                            <option value="boarding">Pet Boarding</option>
+                            <option value="daycare">DayCare booking</option>
+                            <option value="guidance">Health Guidance</option>
+                            <option value="home-visit" disabled>Home Visit (Premium Only)</option>
+                            <option value="priority" disabled>Priority Consultation (Premium Only)</option>
+                            <option value="fish-care" disabled>Fish Care (Premium Only)</option>
+                        </select>
+                    </div>
+
+                    <div id="premium-benefits">
+                        <div>
+                            <h3>Premium Appointment Benefits</h3>
+                            <span>EXCLUSIVE</span>
+                        </div>
+                        <div>
+                            <div>
+                                <div>⏱️</div>
+                                <h4>Priority Time Slots</h4>
+                                <p>Access to exclusive morning and evening slots</p>
+                            </div>
+                            <div>
+                                <div>🚀</div>
+                                <h4>Instant Confirmation</h4>
+                                <p>No waiting - get confirmed appointments immediately</p>
+                            </div>
+                            <div>
+                                <div>🏠</div>
+                                <h4>Home Visit Option</h4>
+                                <p>Get veterinary care at your doorstep</p>
+                            </div>
+                            <div>
+                                <div>🎣</div>
+                                <h4>Fish Care Access</h4>
+                                <p>Specialized care for aquatic pets</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Upgrade to Premium for these exclusive benefits!</p>
+                            <a href="/Premium/Premium.html">
+                                <span>Upgrade Now</span>
+                                <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button type="submit">
+                            Book Basic Appointment
+                        </button>
+                        <button type="button" onclick="window.location.href='/Premium/Premium.html'">
+                            <span>⭐</span>
+                            Book Premium Appointment
+                            <span>⭐</span>
+                        </button>
+                        <button type="reset">Clear Form</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <div>
+                    <h3>Basic Booking Status</h3>
+                    <div>
+                        <div>
+                            <div>1</div>
+                            <div>Submit Request</div>
+                        </div>
+                        <div>
+                            <div>2</div>
+                            <div>Wait for Confirmation (24-48 hours)</div>
+                        </div>
+                        <div>
+                            <div>3</div>
+                            <div>Receive Appointment Slot</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>PREMIUM</div>
+                    <h3>Premium Booking Status</h3>
+                    <div>
+                        <div>
+                            <div>1</div>
+                            <div>Instant Confirmation</div>
+                        </div>
+                        <div>
+                            <div>2</div>
+                            <div>Priority Slot Assignment</div>
+                        </div>
+                        <div>
+                            <div>3</div>
+                            <div>Immediate Service</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <div>
+                <div>
+                    <img src="/Home/Laika Icon.png" alt="Laika Care Logo">
+                    <span>Laika Care</span>
+                </div>
+                <div>
+                    <span>👑</span>
+                    <span>Premium Pet Care Available</span>
+                </div>
+            </div>
+            <div>
+                <h3>LAIKA is a digital pet care platform that helps pet owners book veterinary services and access expert online consultations with ease.</h3>
+                <div>
+                    <p>Gmail: <a href="mailto:laikacare@gmail.com">laikacare@gmail.com</a></p>
+                    <p>Location: <a href="https://www.google.com/maps/place/THAMIZHAN+TATTOOS+(%E0%AE%A4%E0%AE%AE%E0%AE%BF%E0%AE%B4%E0%AE%A9%E0%AF%8D+%E0%AE%AA%E0%AE%9A%E0%AF%8D%E0%AE%9A%E0%AF%88+%E0%AE%95%E0%AF%81%E0%AE%A4%E0%AF%8D%E0%AE%A4%E0%AF%81%E0%AE%AE%E0%AF%8D+%E0%AE%87%E0%AE%9F%E0%AE%AE%E0%AF%8D)+(%E0%AE%9F%E0%AE%BE%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AF%82+%E0%AE%9A%E0%AE%BE%E0%AE%AA%E0%AF%8D)/@13.0043602,80.2047362,19z/data=!3m1!4b1!4m6!3m5!1s0x3a526743eba23611:0xcd1d0be36aca4a95!8m2!3d13.0043602!4d80.2053799!16s%2Fg%2F11c4pc1y08?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D">9/5, G5 Vembuli Subedhar Street, Alandur, Chennai - 600016</a></p>
+                    <p>Contact us: <a href="tel:+918807716906">8807716906</a></p>
+                </div>
+                <div>
+                    <a href="/About/About.html">Terms and Conditions</a>
+                    <a href="/Premium/Premium.html">Premium Features</a>
+                    <a href="/Appointments/Appointments.html">Book Appointment</a>
+                </div>
+                <div>
+                    <p>Subscribe for premium offers</p>
+                    <form>
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+                <p>Laika Care - © 2024</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
